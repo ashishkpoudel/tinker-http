@@ -1,0 +1,15 @@
+@import "./ui/components/variables.scss";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $base-font;
+  font-size: $base-font-size;
+  height: 100%;
+}

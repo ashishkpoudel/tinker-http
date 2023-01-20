@@ -1,0 +1,7 @@
+@use "../variables.scss" as *;
+
+.input {
+  font-size: $base-font-size;
+  border: $border-size $border-style $border-color;
+  border-radius: $border-radius;
+}
