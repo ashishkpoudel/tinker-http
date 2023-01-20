@@ -1,7 +1,8 @@
+import { invoke } from '@tauri-apps/api'
+
 import { Select } from "ui/components/select";
 import { Button } from "ui/components/button";
 import { InputText } from "ui/components/input-text";
-
 import styles from "./home.module.scss";
 
 const Home = () => {
@@ -11,6 +12,11 @@ const Home = () => {
     { label: "PATCH", value: "patch" },
     { label: "DELETE", value: "delete" },
   ];
+
+  const handleSend = () => {
+    invoke('hello_world', { name: 'Ashish' })
+      .then((response) => console.log(response));
+  }
 
   return (
     <div className={styles["container"]}>
@@ -24,7 +30,7 @@ const Home = () => {
           className={styles["urlbar__input"]}
           placeholder="https://example.com"
         ></InputText>
-        <Button varient="primary">Send</Button>
+        <Button varient="primary" onClick={handleSend}>Send</Button>
       </div>
       <div className={styles["response-wrapper"]}>two</div>
     </div>
