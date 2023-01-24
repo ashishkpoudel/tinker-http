@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "tinker-http",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -58,8 +58,8 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "tinker-http",
-        "width": 800
+        "title": "Tinker Http",
+        "width": 850
       }
     ]
   }
